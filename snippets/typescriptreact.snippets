@@ -1,1 +1,13 @@
 extends typescript
+snippet tfc
+	import { FC } from 'react';
+
+	type PropTypes = {4};
+
+	const ${1:ComponentName}: FC<PropTypes> = ({${2:props}}) => {
+		return (
+			<>
+				${4}
+			</>
+		);
+	};

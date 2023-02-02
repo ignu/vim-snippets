@@ -3,6 +3,8 @@ extends javascript
 snippet tconst "ts const"
 	const ${1}: ${2:any} = ${3};
 	${0}
+snippet bm "log pipe with bimap pipe"
+  RTE.bimap((x) => {console.log(x, "👎 ${1:pipe} left"); return x;}, (x) => {console.log(x, "🚀 ${2:pipe} right" ); return x}),
 snippet tlet "ts let"
 	let ${1}: ${2:any} = ${3};
 	${0}

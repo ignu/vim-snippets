@@ -83,3 +83,8 @@ snippet afta "after all (js)" b
   afterAll(() => {
   	$0
   });
+snippet pwa "page await"
+	await page.waitForTimeout(${1:1000});
+snippet pex "page expect"
+	await expect(page.getByText(${1})).toHaveCount(${2:1});
+

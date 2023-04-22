@@ -1,5 +1,5 @@
 extends typescript
-snippet tfc
+snippet ttfc
 	import { FC } from 'react';
 
 	type PropTypes = {4};
@@ -11,3 +11,14 @@ snippet tfc
 			</>
 		);
 	};
+snippet tfc
+	type PropTypes = {4};
+
+	const ${1:ComponentName}: FC<PropTypes> = ({${2:props}}) => {
+		return (
+			<>
+				${4}
+			</>
+		);
+	};
+
